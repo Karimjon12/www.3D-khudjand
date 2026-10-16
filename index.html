@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="3D Khujand — услуги 3D-печати в Худжанде. Печать деталей, брелоков, прототипов и изделий на заказ.">
+  <title>3D Khujand — 3D-печать в Худжанде</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#080d18;--muted:#697a96;--line:#dce5f2;--soft:#eef4fc;--accent:#e11d48;--accent-dark:#be123c;--white:#fff;--radius:22px;--shadow:0 18px 55px rgba(26,39,53,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;font-family:Manrope,system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.container{width:min(1160px,calc(100% - 40px));margin-inline:auto}
+    .topbar{border-bottom:1px solid var(--line);font-size:12px;color:var(--muted)}.topbar .container{display:flex;justify-content:space-between;gap:14px;padding:9px 0}.topbar strong{color:var(--ink)}
+    header{position:sticky;top:0;background:rgba(248,251,255,.94);backdrop-filter:blur(14px);z-index:20;border-bottom:1px solid rgba(232,237,242,.85)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.7px;font-size:20px}.brand-mark{display:grid;place-items:center;width:42px;height:42px;background:var(--accent);color:#fff;border-radius:14px;font-size:16px;box-shadow:0 8px 20px #e11d483b}.brand small{display:block;font-size:10px;letter-spacing:2px;color:var(--muted);font-weight:700;margin-top:-4px}.navlinks{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:700;color:#4c5865}.navlinks a:hover{color:var(--accent-dark)}.btn{border:0;display:inline-flex;justify-content:center;align-items:center;gap:9px;border-radius:13px;padding:13px 19px;font-weight:800;font-size:13px;cursor:pointer;transition:.2s}.btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 20px #e11d4830}.btn-primary:hover{background:var(--accent-dark);transform:translateY(-2px)}.btn-outline{background:#f8fbff;border:1px solid var(--line);color:var(--ink)}.btn-outline:hover{border-color:#c9d1da}.menu-btn{display:none;background:#fff;border:1px solid var(--line);border-radius:12px;width:44px;height:44px;font-size:22px}
+    .hero{padding:74px 0 58px;overflow:hidden;background:radial-gradient(ellipse at 85% 28%,#e8f1ff 0,transparent 33%),linear-gradient(180deg,#fff 0%,#f8fbff 100%)}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;align-items:center;gap:50px}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 12px;border:1px solid #c9dcff;background:#eff6ff;color:#1d4ed8;border-radius:100px;font-size:11px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--accent);border-radius:50%}h1{font-size:clamp(39px,5vw,64px);letter-spacing:-3.5px;line-height:1.08;margin:22px 0 19px;font-weight:800}h1 span{color:var(--accent)}.hero p{font-size:16px;color:var(--muted);max-width:520px;margin:0 0 28px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.trust{display:flex;flex-wrap:wrap;gap:19px;margin-top:29px;color:#56616e;font-size:12px;font-weight:700}.trust span{display:flex;align-items:center;gap:7px}.check{color:#16a36a;font-weight:900}
+    .hero-art{position:relative;min-height:430px;display:grid;place-items:center}.art-glow{position:absolute;width:360px;height:360px;background:#dbeafe;border-radius:50%;filter:blur(2px)}.printer-card{position:relative;width:min(100%,440px);padding:23px;border:1px solid #edf0f3;background:#fff;border-radius:28px;box-shadow:var(--shadow);transform:rotate(1.5deg)}.printer-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px}.printer-top b{font-size:13px}.live{font-size:10px;font-weight:800;color:#179d68;background:#e8fbf2;padding:6px 9px;border-radius:50px}.printer-visual{height:260px;border-radius:20px;background:linear-gradient(145deg,#eef4fc,#dce8f8);display:grid;place-items:center;overflow:hidden;position:relative}.printer-visual:before,.printer-visual:after{content:"";position:absolute;border:1px solid #d7dfe7;border-radius:12px;width:220px;height:180px;transform:skewY(-9deg) rotate(0deg);top:28px}.printer-visual:after{width:150px;height:130px;top:55px;left:calc(50% - 75px);border-color:#c4ced8}.printer-svg{width:245px;max-width:90%;position:relative;z-index:2;filter:drop-shadow(0 12px 9px #1a2b3a1a)}.floating-tag{position:absolute;z-index:3;background:#fff;padding:12px 15px;border-radius:14px;box-shadow:0 12px 35px #2030401a;font-size:11px;font-weight:800}.tag-one{left:-15px;bottom:64px}.tag-two{right:-17px;top:78px}.floating-tag span{display:block;color:var(--muted);font-size:10px;font-weight:600}.printer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:17px;font-size:11px;color:var(--muted)}.printer-bottom strong{font-size:12px;color:var(--ink)}
+    .stats{padding:23px 0;border-block:1px solid var(--line)}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.stat{padding:8px 18px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat b{display:block;font-size:23px;letter-spacing:-1px}.stat span{font-size:11px;color:var(--muted);font-weight:700}
+    section{padding:86px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:32px}.kicker{color:var(--accent-dark);font-size:11px;letter-spacing:1.6px;font-weight:800;text-transform:uppercase}.section-head h2,.about-copy h2,.contact-copy h2{font-size:clamp(30px,4vw,43px);letter-spacing:-2px;line-height:1.15;margin:10px 0 0}.section-head p{max-width:410px;color:var(--muted);font-size:13px;margin:0}.services{background:var(--soft)}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.service{background:#fff;border:1px solid #edf0f3;border-radius:20px;padding:25px;transition:.25s}.service:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.service-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:16px;background:#e8f1ff;color:var(--accent-dark);font-size:25px;margin-bottom:20px}.service h3{font-size:17px;margin:0 0 8px;letter-spacing:-.5px}.service p{color:var(--muted);font-size:12px;margin:0 0 17px}.service a{font-size:12px;font-weight:800;color:var(--accent-dark)}
+    .gallery-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:16px}.work-card{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff}.work-art{height:220px;display:grid;place-items:center;background:linear-gradient(135deg,#edf3fb,#dce8f8);position:relative}.work-card:first-child .work-art{height:270px}.work-art.orange{background:linear-gradient(135deg,#dbeafe,#c7ddff)}.work-art.blue{background:linear-gradient(135deg,#eff6ff,#dfeaff)}.work-art svg{width:150px;height:150px}.work-card:first-child .work-art svg{width:185px;height:185px}.work-info{padding:17px 19px}.work-info b{font-size:13px;display:block}.work-info span{font-size:11px;color:var(--muted)}
+    .how{background:#fff}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.step{border-top:2px solid var(--line);padding-top:20px}.step-num{font-size:11px;font-weight:800;color:var(--accent-dark);letter-spacing:1px}.step h3{font-size:15px;margin:12px 0 7px}.step p{font-size:12px;color:var(--muted);margin:0}
+    .about{background:#080d18;color:#fff;overflow:hidden}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about-copy .kicker{color:#60a5fa}.about-copy p{color:#c0c8d1;font-size:14px}.about-points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}.about-point{padding:14px;border:1px solid #ffffff1c;border-radius:13px;font-size:12px;font-weight:700}.about-point span{color:#60a5fa;margin-right:8px}.about-visual{border-radius:25px;background:linear-gradient(145deg,#111c31,#0b1426);padding:24px;min-height:340px;display:grid;place-items:center;position:relative}.about-visual svg{width:min(100%,360px);filter:drop-shadow(0 20px 15px #0003)}.about-label{position:absolute;bottom:22px;left:22px;background:#ffffff12;border:1px solid #ffffff20;border-radius:12px;padding:10px 13px;font-size:11px}
+    .contact{background:#eef4fc}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:start}.contact-copy p{font-size:13px;color:var(--muted);margin:18px 0 25px}.contact-detail{display:flex;gap:12px;align-items:center;margin:17px 0;font-size:12px}.contact-detail .mini-icon{width:40px;height:40px;border-radius:12px;background:#fff;display:grid;place-items:center;color:var(--accent-dark);font-size:18px;border:1px solid var(--line)}.contact-detail small{display:block;color:var(--muted);font-size:10px}.form-card{padding:28px;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 12px 40px #23354808}.form-card h3{margin:0 0 5px;font-size:19px}.form-card>p{margin:0 0 22px;font-size:12px;color:var(--muted)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:800}.field input,.field select,.field textarea{width:100%;border:1px solid #dfe5eb;border-radius:11px;padding:12px 13px;background:#fff;color:var(--ink);outline:none;font-size:12px}.field textarea{min-height:100px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--accent)}.form-note{font-size:10px;color:var(--muted);margin:12px 0 17px}.form-card .btn{width:100%}.notice{display:none;margin-top:12px;padding:12px;border-radius:10px;background:#e8fbf2;color:#14764f;font-size:12px}
+    footer{padding:28px 0;border-top:1px solid var(--line)}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer-copy{font-size:10px;color:var(--muted)}.footer-links{display:flex;gap:20px;font-size:11px;color:var(--muted);font-weight:700}.footer-links a:hover{color:var(--accent-dark)}.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:15;background:#20bd68;color:#fff;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:24px;box-shadow:0 10px 30px #20bd6840;transition:.2s}.whatsapp-float:hover{transform:translateY(-3px)}
+    @media(max-width:900px){.navlinks{gap:15px}.hero-grid{gap:22px}.hero-art{min-height:360px}.printer-visual{height:220px}.art-glow{width:290px;height:290px}.gallery-grid{grid-template-columns:1fr 1fr}.work-card:first-child{grid-column:1/-1}.work-card:first-child .work-art{height:230px}.about-grid{gap:30px}.contact-grid{gap:28px}}
+    @media(max-width:700px){.container{width:min(100% - 30px,560px)}.topbar .container{justify-content:center}.topbar .container span:last-child{display:none}.nav{min-height:68px}.menu-btn{display:block}.nav-cta{display:none}.navlinks{display:none;position:absolute;top:68px;left:0;right:0;padding:18px 22px 22px;background:#fff;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}.navlinks.open{display:flex}.navlinks a{padding:12px 4px;border-bottom:1px solid var(--line)}.navlinks a:last-child{border:0}.hero{padding:47px 0 35px}.hero-grid{grid-template-columns:1fr}.hero h1{letter-spacing:-2.2px}.hero p{font-size:14px}.hero-art{min-height:340px;margin-top:5px}.printer-card{width:calc(100% - 22px);padding:16px}.printer-visual{height:205px}.tag-one{left:-8px;bottom:48px}.tag-two{right:-8px;top:52px}.stats-grid{grid-template-columns:1fr 1fr}.stat{padding:12px;border-right:0;border-bottom:1px solid var(--line)}.stat:nth-child(odd){border-right:1px solid var(--line)}.stat:nth-child(n+3){border-bottom:0}.stat b{font-size:21px}section{padding:61px 0}.section-head{display:block}.section-head p{margin-top:14px}.service-grid{grid-template-columns:1fr}.service{padding:22px}.gallery-grid{grid-template-columns:1fr 1fr;gap:10px}.work-card:first-child{grid-column:1/-1}.work-art{height:150px}.work-card:first-child .work-art{height:210px}.work-art svg{width:105px;height:105px}.work-card:first-child .work-art svg{width:155px;height:155px}.work-info{padding:13px}.steps{grid-template-columns:1fr 1fr;gap:24px 17px}.about-grid{grid-template-columns:1fr}.about-copy h2,.contact-copy h2{letter-spacing:-1.5px}.about-visual{min-height:280px}.contact-grid{grid-template-columns:1fr}.form-card{padding:20px}.footer-row{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}.whatsapp-float{width:50px;height:50px;right:15px;bottom:15px}}
+    @media(max-width:380px){.hero-actions .btn{width:100%}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.gallery-grid{grid-template-columns:1fr}.work-card:first-child{grid-column:auto}.work-art,.work-card:first-child .work-art{height:200px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>📍 <strong>Худжанд, Таджикистан</strong></span><span>Индивидуальная 3D-печать · По предварительному заказу</span></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="3D Khujand — главная"><span class="brand-mark">3D</span><span>Khujand<small>3D PRINTING STUDIO</small></span></a>
+      <nav class="navlinks" id="navlinks" aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#works">Наши работы</a><a href="#how">Как заказать</a><a href="#about">О нас</a><a href="#contact">Контакты</a></nav>
+      <a class="btn btn-primary nav-cta" href="#contact">Обсудить заказ <span>↗</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> 3D-печать в Худжанде</div>
+          <h1>Идеи становятся <span>реальными.</span></h1>
+          <p>Печатаем полезные детали, оригинальные подарки и прототипы по вашей идее или 3D-модели. Аккуратно, современно и под заказ.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#contact">Заказать печать <span>↗</span></a><a class="btn btn-outline" href="#works">Посмотреть работы <span>↓</span></a></div>
+          <div class="trust"><span><b class="check">✓</b> Изделия на заказ</span><span><b class="check">✓</b> Помощь с моделью</span><span><b class="check">✓</b> Подбор материала</span></div>
+        </div>
+        <div class="hero-art" aria-label="Иллюстрация 3D-принтера">
+          <div class="art-glow"></div>
+          <div class="printer-card">
+            <div class="printer-top"><b>Технология FDM</b><span class="live">● ПЕЧАТЬ ПО ЗАКАЗУ</span></div>
+            <div class="printer-visual">
+              <svg class="printer-svg" viewBox="0 0 260 250" role="img" aria-label="Стилизованный 3D-принтер">
+                <defs><linearGradient id="frame" x1="0" x2="1"><stop stop-color="#344354"/><stop offset="1" stop-color="#080d18"/></linearGradient><linearGradient id="orange" x1="0" x2="1"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#1d4ed8"/></linearGradient></defs>
+                <path d="M48 30 L48 204 L213 204 L213 30 Z" fill="#fff" stroke="url(#frame)" stroke-width="9" stroke-linejoin="round"/>
+                <path d="M48 30 L213 30" stroke="#263442" stroke-width="11" stroke-linecap="round"/>
+                <path d="M72 46 L72 181 M189 46 L189 181" stroke="#b7c2ce" stroke-width="5"/>
+                <rect x="90" y="49" width="78" height="22" rx="5" fill="#263442"/>
+                <rect x="115" y="69" width="27" height="36" rx="5" fill="#e11d48"/>
+                <path d="M128 105 L128 132" stroke="#1d4ed8" stroke-width="5" stroke-linecap="round"/>
+                <path d="M92 181 L165 181 L151 154 L106 154 Z" fill="url(#orange)" stroke="#dc5d1b" stroke-width="2"/>
+                <path d="M91 181 L165 181 L160 190 L96 190 Z" fill="#d9e0e7"/>
+                <path d="M79 207 L183 207" stroke="#263442" stroke-width="10" stroke-linecap="round"/>
+                <rect x="177" y="213" width="28" height="16" rx="4" fill="#e11d48"/>
+                <circle cx="191" cy="221" r="3" fill="#fff"/>
+                <path d="M58 40 L58 194" stroke="#6f7e8d" stroke-width="2" opacity=".6"/>
+              </svg>
+            </div>
+            <div class="printer-bottom"><span>Детали · Прототипы · Подарки</span><strong>3D Khujand</strong></div>
+          </div>
+          <div class="floating-tag tag-one">🎯 Точно по модели<span>Размер и форма под задачу</span></div>
+          <div class="floating-tag tag-two">🧩 От идеи к детали<span>Поможем подготовить файл</span></div>
+        </div>
+      </div>
+    </section>
+    <div class="stats"><div class="container stats-grid"><div class="stat"><b>01</b><span>Обсуждаем вашу идею</span></div><div class="stat"><b>3D</b><span>Печать по цифровой модели</span></div><div class="stat"><b>100%</b><span>Индивидуальный подход</span></div><div class="stat"><b>📍</b><span>Работаем в Худжанде</span></div></div></div>
+    <section class="services" id="services">
+      <div class="container"><div class="section-head"><div><div class="kicker">Что мы печатаем</div><h2>3D-печать для ваших задач</h2></div><p>От маленьких аксессуаров до функциональных деталей. Обсудим назначение изделия и подберём подходящий вариант.</p></div>
+        <div class="service-grid">
+          <article class="service"><div class="service-icon">⚙️</div><h3>Детали и запчасти</h3><p>Небольшие пластиковые детали, крепления, держатели и элементы для бытовых проектов.</p><a href="#contact" data-service="Детали и запчасти">Заказать деталь ↗</a></article>
+          <article class="service"><div class="service-icon">🎁</div><h3>Брелоки и подарки</h3><p>Именные брелоки, сувениры, небольшие подарки и изделия с индивидуальным дизайном.</p><a href="#contact" data-service="Брелоки и подарки">Создать подарок ↗</a></article>
+          <article class="service"><div class="service-icon">🧪</div><h3>Прототипы и модели</h3><p>Макеты, концептуальные модели и детали для проверки формы перед изготовлением.</p><a href="#contact" data-service="Прототипы и модели">Обсудить проект ↗</a></article>
+          <article class="service"><div class="service-icon">🏠</div><h3>Дом и организация</h3><p>Подставки, органайзеры, крючки и удобные аксессуары для повседневной жизни.</p><a href="#contact" data-service="Аксессуары для дома">Подобрать изделие ↗</a></article>
+          <article class="service"><div class="service-icon">🎮</div><h3>Хобби и творчество</h3><p>Элементы для собственных проектов, настольных игр, макетов и творческих задумок.</p><a href="#contact" data-service="Хобби и творчество">Рассказать идею ↗</a></article>
+          <article class="service"><div class="service-icon">📐</div><h3>Подготовка 3D-модели</h3><p>Есть только идея или фото? Обсудим, можно ли подготовить модель для печати.</p><a href="#contact" data-service="Подготовка 3D-модели">Уточнить возможность ↗</a></article>
+        </div>
+      </div>
+    </section>
+    <section id="works">
+      <div class="container"><div class="section-head"><div><div class="kicker">Примеры направлений</div><h2>Что можно создать</h2></div><p>Это иллюстративные примеры. Фактические изделия, материалы, сроки и стоимость согласовываются перед заказом.</p></div>
+        <div class="gallery-grid">
+          <article class="work-card"><div class="work-art orange"><svg viewBox="0 0 180 180" aria-label="Иллюстрация именного брелока"><g transform="rotate(-10 90 90)"><rect x="29" y="49" width="122" height="78" rx="20" fill="#2563eb" stroke="#1d4ed8" stroke-width="3"/><circle cx="48" cy="65" r="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/><text x="92" y="94" font-family="Manrope,sans-serif" font-weight="800" font-size="22" text-anchor="middle" fill="#fff">3D</text><text x="92" y="112" font-family="Manrope,sans-serif" font-weight="700" font-size="10" text-anchor="middle" fill="#fff">KHUJAND</text></g></svg></div><div class="work-info"><b>Именные брелоки</b><span>Идея для подарка или сувенира</span></div></article>
+          <article class="work-card"><div class="work-art"><svg viewBox="0 0 150 150" aria-label="Иллюстрация органайзера"><g stroke="#465768" stroke-width="2" stroke-linejoin="round"><path d="M28 57 L75 35 L122 57 L122 104 L75 128 L28 104 Z" fill="#d6dde5"/><path d="M28 57 L75 80 L122 57" fill="none"/><path d="M75 80 L75 128" fill="none"/><path d="M45 64 L45 97 L63 106 L63 73 Z" fill="#fff"/><path d="M84 85 L108 73 L108 98 L84 110 Z" fill="#2563eb"/></g></svg></div><div class="work-info"><b>Органайзеры</b><span>Практичные вещи для дома</span></div></article>
+          <article class="work-card"><div class="work-art blue"><svg viewBox="0 0 150 150" aria-label="Иллюстрация технической детали"><g stroke="#45617e" stroke-width="3"><path d="M75 20 L108 39 L108 77 L75 96 L42 77 L42 39 Z" fill="#b9d4f8"/><path d="M75 20 L75 58 M42 39 L75 58 L108 39 M75 58 L75 96" fill="none"/><circle cx="75" cy="58" r="12" fill="#f8fbff"/><path d="M75 96 L75 119 M61 119 L89 119 M56 128 L94 128" fill="none" stroke-linecap="round"/></g></svg></div><div class="work-info"><b>Технические детали</b><span>Под задачу и размеры</span></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="how" id="how"><div class="container"><div class="section-head"><div><div class="kicker">Простой процесс</div><h2>Как сделать заказ</h2></div><p>Вы рассказываете, что нужно, а мы вместе уточняем детали перед печатью.</p></div><div class="steps">
+      <div class="step"><span class="step-num">ШАГ 01</span><h3>Расскажите идею</h3><p>Опишите изделие, приложите фото или 3D-файл в сообщении.</p></div>
+      <div class="step"><span class="step-num">ШАГ 02</span><h3>Уточним детали</h3><p>Согласуем размеры, назначение, цвет и доступный материал.</p></div>
+      <div class="step"><span class="step-num">ШАГ 03</span><h3>Получите расчёт</h3><p>Обсудим стоимость и ориентировочные сроки до начала работы.</p></div>
+      <div class="step"><span class="step-num">ШАГ 04</span><h3>Изготовление</h3><p>После согласования подготовим изделие и сообщим о готовности.</p></div>
+    </div></div></section>
+    <section class="about" id="about"><div class="container about-grid"><div class="about-copy"><div class="kicker">3D Khujand</div><h2>Маленькие детали. Большие идеи.</h2><p>Мы помогаем превращать цифровые модели и задумки в физические изделия с помощью 3D-печати. Каждый заказ обсуждается индивидуально — от назначения детали до желаемого результата.</p><p>Не уверены, подходит ли ваша идея для печати? Напишите нам: вместе разберёмся, что можно сделать.</p><div class="about-points"><div class="about-point"><span>✓</span> Индивидуальный заказ</div><div class="about-point"><span>✓</span> Согласование до печати</div><div class="about-point"><span>✓</span> Помощь с выбором</div><div class="about-point"><span>✓</span> Локально в Худжанде</div></div></div><div class="about-visual"><svg viewBox="0 0 360 300" role="img" aria-label="Графическая иллюстрация 3D-принтера"><g stroke="#c8d1db" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" fill="none"><path d="M78 45 L78 242 L285 242 L285 45 Z"/><path d="M78 45 L285 45"/><path d="M107 60 L107 220 M256 60 L256 220" stroke="#718091" stroke-width="4"/></g><rect x="131" y="60" width="102" height="24" rx="6" fill="#e11d48"/><rect x="166" y="84" width="32" height="43" rx="5" fill="#e7edf3"/><path d="M182 127 L182 164" stroke="#e11d48" stroke-width="5" stroke-linecap="round"/><path d="M139 218 L225 218 L210 184 L154 184 Z" fill="#e11d48"/><path d="M139 218 L225 218 L220 228 L144 228 Z" fill="#c8d1db"/><path d="M116 244 L246 244" stroke="#718091" stroke-width="9" stroke-linecap="round"/><circle cx="273" cy="265" r="15" fill="#e11d48"/><path d="M267 265 L272 270 L280 260" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="about-label">Твоя идея — следующий проект ✦</div></div></div></section>
+    <section class="contact" id="contact"><div class="container contact-grid"><div class="contact-copy"><div class="kicker">Связаться с нами</div><h2>Расскажите, что напечатать</h2><p>Заполните форму — она подготовит текст заказа для отправки в WhatsApp. Уточните размеры и приложите файл уже в чате.</p><div class="contact-detail"><span class="mini-icon">📍</span><span><b>Худжанд, Таджикистан</b><small>Место выполнения заказов</small></span></div><div class="contact-detail"><span class="mini-icon">💬</span><span><b>WhatsApp</b><small>Связь по предварительному заказу</small></span></div><div class="contact-detail"><span class="mini-icon">🕒</span><span><b>Сроки согласовываются</b><small>Зависят от размера и сложности модели</small></span></div></div>
+      <form class="form-card" id="orderForm"><h3>Заявка на 3D-печать</h3><p>После нажатия откроется WhatsApp с готовым сообщением.</p><div class="form-grid">
+        <div class="field"><label for="name">Ваше имя</label><input id="name" name="name" placeholder="Как к вам обращаться" required></div>
+        <div class="field"><label for="phone">Телефон для связи</label><input id="phone" name="phone" type="tel" placeholder="+992 ..." required></div>
+        <div class="field full"><label for="service">Что нужно напечатать?</label><select id="service" name="service"><option>Детали и запчасти</option><option>Брелоки и подарки</option><option>Прототипы и модели</option><option>Аксессуары для дома</option><option>Хобби и творчество</option><option>Подготовка 3D-модели</option><option>Другое</option></select></div>
+        <div class="field full"><label for="details">Описание заказа</label><textarea id="details" name="details" placeholder="Размеры, цвет, количество, ссылка на модель или другие пожелания..."></textarea></div>
+      </div><p class="form-note">Нажимая кнопку, вы откроете WhatsApp и сможете проверить сообщение перед отправкой.</p><button class="btn btn-primary" type="submit">Подготовить заказ в WhatsApp ↗</button><div class="notice" id="notice" role="status">Если WhatsApp не открылся, проверьте номер телефона бизнеса в настройках сайта.</div></form>
+    </div></section>
+  </main>
+  <footer><div class="container footer-row"><a class="brand" href="#home"><span class="brand-mark">3D</span><span>Khujand<small>3D PRINTING STUDIO</small></span></a><span class="footer-copy">© <span id="year"></span> 3D Khujand. Все права защищены.</span><div class="footer-links"><a href="#services">Услуги</a><a href="#works">Работы</a><a href="#contact">Заказать</a></div></div></footer>
+  <a class="whatsapp-float" id="waFloat" href="#contact" aria-label="Заказать через WhatsApp" title="Заказать через WhatsApp">✆</a>
+  <script>
+    // Перед публикацией замените номер ниже на WhatsApp-номер бизнеса в международном формате, только цифры.
+    const WHATSAPP_NUMBER = "992927252949";
+    const menuBtn = document.getElementById("menuBtn");
+    const navlinks = document.getElementById("navlinks");
+    menuBtn.addEventListener("click", () => {
+      const opened = navlinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", String(opened));
+      menuBtn.textContent = opened ? "×" : "☰";
+    });
+    navlinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+      navlinks.classList.remove("open"); menuBtn.setAttribute("aria-expanded","false"); menuBtn.textContent = "☰";
+    }));
+    document.querySelectorAll("[data-service]").forEach(link => link.addEventListener("click", () => {
+      document.getElementById("service").value = link.dataset.service;
+    }));
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("waFloat").addEventListener("click", e => {
+      if (WHATSAPP_NUMBER.length < 10) { e.preventDefault(); document.getElementById("contact").scrollIntoView(); }
+      else { e.preventDefault(); window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent("Здравствуйте! Хочу узнать об услугах 3D-печати 3D Khujand."), "_blank", "noopener"); }
+    });
+    document.getElementById("orderForm").addEventListener("submit", e => {
+      e.preventDefault();
+      const name = document.getElementById("name").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const service = document.getElementById("service").value;
+      const details = document.getElementById("details").value.trim();
+      const message = `Здравствуйте! Хочу оформить заказ в 3D Khujand.%0AИмя: ${name}%0Телефон: ${phone}%0AУслуга: ${service}%0AОписание: ${details || "Обсудим в чате"}`;
+      const cleanMessage = `Здравствуйте! Хочу оформить заказ в 3D Khujand.\nИмя: ${name}\nТелефон: ${phone}\nУслуга: ${service}\nОписание: ${details || "Обсудим в чате"}`;
+      if (WHATSAPP_NUMBER.length >= 10) {
+        window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(cleanMessage), "_blank", "noopener");
+      } else {
+        document.getElementById("notice").style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>
